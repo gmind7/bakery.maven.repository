@@ -115,6 +115,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-application-config</artifactId>
+      <version>0.0.1-RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
@@ -163,12 +169,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-web-support</artifactId>
-      <version>0.0.1-RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>cglib</groupId>
       <artifactId>cglib-nodep</artifactId>
       <version>2.2.2</version>
@@ -205,12 +205,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-application-config</artifactId>
-      <version>0.0.1-RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <version>1.9.5</version>
@@ -232,6 +226,12 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>4.0.0.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-web-support</artifactId>
+      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
