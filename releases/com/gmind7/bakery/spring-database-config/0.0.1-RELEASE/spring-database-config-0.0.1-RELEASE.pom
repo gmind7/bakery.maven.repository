@@ -3,20 +3,20 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gmind7.bakery</groupId>
-  <artifactId>spring-web-api-config</artifactId>
+  <artifactId>spring-database-config</artifactId>
   <version>0.0.1-RELEASE</version>
   <dependencies>
+    <dependency>
+      <groupId>com.mysema.querydsl</groupId>
+      <artifactId>querydsl-core</artifactId>
+      <version>2.9.0</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
       <version>4.0.0.RELEASE</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.hateoas</groupId>
-      <artifactId>spring-hateoas</artifactId>
-      <version>0.8.0.RELEASE</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -31,15 +31,21 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>1.4.3.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>1.7.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework.data</groupId>
-      <artifactId>spring-data-rest-core</artifactId>
-      <version>1.1.0.M1</version>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-ehcache-config</artifactId>
+      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -67,9 +73,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework.data</groupId>
-      <artifactId>spring-data-commons</artifactId>
-      <version>1.6.2.RELEASE</version>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.2.3</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -91,9 +97,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-web-support</artifactId>
-      <version>0.0.1-RELEASE</version>
+      <groupId>net.sf.ehcache</groupId>
+      <artifactId>ehcache-core</artifactId>
+      <version>2.4.7</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.2.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -109,12 +121,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-application-config</artifactId>
-      <version>0.0.1-RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>4.0.0.RELEASE</version>
@@ -127,9 +133,21 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-jdbc</artifactId>
+      <version>7.0.30</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-redis</artifactId>
+      <version>1.1.0.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -139,21 +157,33 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>joda-time</groupId>
-      <artifactId>joda-time</artifactId>
-      <version>2.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>4.0.0.RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>4.3.0.Final</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.5</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.mysema.querydsl</groupId>
+      <artifactId>querydsl-jpa</artifactId>
+      <version>2.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-ehcache</artifactId>
+      <version>4.3.0.Final</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -167,6 +197,12 @@
       <artifactId>guava</artifactId>
       <version>15.0</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <version>2.2.9</version>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -188,12 +224,6 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>4.0.0.RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
       <version>4.0.0.RELEASE</version>
       <scope>compile</scope>
@@ -211,6 +241,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.mysema.querydsl</groupId>
+      <artifactId>querydsl-apt</artifactId>
+      <version>2.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <version>1.9.5</version>
@@ -223,15 +259,21 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework.plugin</groupId>
-      <artifactId>spring-plugin-core</artifactId>
-      <version>0.8.0.RELEASE</version>
+      <groupId>com.mysema.querydsl</groupId>
+      <artifactId>querydsl-sql</artifactId>
+      <version>2.9.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>4.0.0.RELEASE</version>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jdbc-core</artifactId>
+      <version>1.0.0.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-application-config</artifactId>
+      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
