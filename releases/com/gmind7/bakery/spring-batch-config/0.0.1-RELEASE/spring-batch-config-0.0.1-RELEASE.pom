@@ -19,6 +19,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-application-config</artifactId>
+      <version>0.0.1-RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.0.13</version>
@@ -214,12 +220,6 @@
       <groupId>javax.inject</groupId>
       <artifactId>javax.inject</artifactId>
       <version>1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-application-config</artifactId>
-      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

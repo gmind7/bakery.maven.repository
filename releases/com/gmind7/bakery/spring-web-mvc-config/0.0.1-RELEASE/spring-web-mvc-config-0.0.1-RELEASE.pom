@@ -61,6 +61,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-web-support</artifactId>
+      <version>0.0.1-RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
       <version>1.0.0.GA</version>
@@ -76,12 +82,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
       <version>4.0.0.RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-web-support</artifactId>
-      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -109,6 +109,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-application-config</artifactId>
+      <version>0.0.1-RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>4.0.0.RELEASE</version>
@@ -124,12 +130,6 @@
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-application-config</artifactId>
-      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

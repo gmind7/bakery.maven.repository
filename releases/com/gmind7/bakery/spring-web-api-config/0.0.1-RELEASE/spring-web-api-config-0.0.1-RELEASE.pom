@@ -13,6 +13,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-web-support</artifactId>
+      <version>0.0.1-RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.hateoas</groupId>
       <artifactId>spring-hateoas</artifactId>
       <version>0.8.0.RELEASE</version>
@@ -85,15 +91,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjrt</artifactId>
-      <version>1.7.1</version>
+      <groupId>com.gmind7.bakery</groupId>
+      <artifactId>spring-application-config</artifactId>
+      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-web-support</artifactId>
-      <version>0.0.1-RELEASE</version>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.7.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -106,12 +112,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>4.0.0.RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.gmind7.bakery</groupId>
-      <artifactId>spring-application-config</artifactId>
-      <version>0.0.1-RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
