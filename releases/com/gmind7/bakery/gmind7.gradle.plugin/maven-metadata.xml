@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.gmind7.bakery</groupId>
-  <artifactId>spring-database-config</artifactId>
+  <artifactId>gmind7.gradle.plugin</artifactId>
   <version>0.0.1-RELEASE</version>
   <versioning>
     <versions>
       <version>0.0.1-RELEASE</version>
       <version>0.0.2-RELEASE</version>
     </versions>
-    <lastUpdated>20140105035509</lastUpdated>
+    <lastUpdated>20140104094234</lastUpdated>
   </versioning>
 </metadata>
