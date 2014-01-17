@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.gmind7.bakery</groupId>
+  <artifactId>bakery-spring-batch-config</artifactId>
+  <version>0.0.1-RELEASE</version>
+  <versioning>
+    <versions>
+      <version>0.0.1-RELEASE</version>
+    </versions>
+    <lastUpdated>20140117044214</lastUpdated>
+  </versioning>
+</metadata>
