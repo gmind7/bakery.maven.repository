@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.gmind7.bakery</groupId>
-  <artifactId>bakery-spring-database-config</artifactId>
+  <artifactId>bakery-spring-infinispan-config</artifactId>
   <version>0.0.1-RELEASE</version>
   <versioning>
     <versions>
       <version>0.0.1-RELEASE</version>
-      <version>0.0.2-RELEASE</version>
     </versions>
-    <lastUpdated>20140729035750</lastUpdated>
+    <lastUpdated>20140729035640</lastUpdated>
   </versioning>
 </metadata>
