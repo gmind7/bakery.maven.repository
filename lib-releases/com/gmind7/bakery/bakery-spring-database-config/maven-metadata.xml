@@ -7,7 +7,10 @@
     <versions>
       <version>0.0.1-RELEASE</version>
       <version>0.0.2-RELEASE</version>
+      <version>0.0.3-RELEASE</version>
+      <version>0.0.4-RELEASE</version>
+      <version>0.0.5-RELEASE</version>
     </versions>
-    <lastUpdated>20140729035750</lastUpdated>
+    <lastUpdated>20140730050438</lastUpdated>
   </versioning>
 </metadata>
